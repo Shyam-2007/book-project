@@ -31,6 +31,9 @@ public class PigLatinTranslator
 
     // Replace this code to correctly translate a single word.
     // Start here first!
+    if(input.charAt(0) == 'a'||input.charAt(0) == 'e'||input.charAt(0) == 'i'||input.charAt(0) == 'o'||input.charAt(0) == 'u'){
+      input+= "ay";
+    }
     String result = input;
     
     return result;
